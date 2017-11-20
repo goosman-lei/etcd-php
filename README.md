@@ -2,6 +2,8 @@
 
 client of etcd for php language
 
+Inspired by [linkorb/etcd-php](http://github.com/goosman-lei/etcd-php)
+
 * persistent connect in multi request
 
 * one connect service multi times
