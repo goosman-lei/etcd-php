@@ -1,0 +1,11 @@
+{
+    "name": "goosman-lei/etcd-php",
+    "description": "Client of etcd for php",
+    "version": "0.0.1-dev",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Etcd\\": "src"
+        }
+    }
+}

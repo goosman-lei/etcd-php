@@ -1,24 +1,3 @@
-# php-etcd
-
-client of etcd for php language
-
-* persistent connect in multi request
-
-* one connect service multi times
-
-* raw http-response parse, will maxmized reduce real-time
-
-* In my test(1000 times getNode)
-
-real-time: 800ms
-
-cpu usr-time: 180ms
-
-cpu sys-time: 35ms
-
-## example code
-
-```php
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -54,4 +33,3 @@ echo json_encode($info, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_P
 $info = $etcd->get('/etcd-php-test/dir-parent/dir-child/value-key');
 echo "set /etcd-php-test/dir-parent/dir-child/value-key\n";
 echo json_encode($info, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) . "\n";
-```
